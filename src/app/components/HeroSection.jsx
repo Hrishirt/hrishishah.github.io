@@ -2,7 +2,16 @@ import React from 'react'
 
 export const HeroSection = () => {
   return <section>
-    <h1 className = "text-white">Hi, I'm Hrishi</h1>
+    <h1 className = "text-white mb-4 text-4xl lg:text-6xl font-extrabold">
+        Hey, I'm Hrishi
+    </h1>
+    <p className="text-[#ADB7Be] text-lg lg:text-xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
   </section>
 };
 
