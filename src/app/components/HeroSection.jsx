@@ -8,15 +8,23 @@ export const HeroSection = () => {
             <h1 className = "text-white mb-4 text-4xl lg:text-6xl font-extrabold">
                 Hey, I'm Hrishi
             </h1>
-            <p className="text-[#ADB7Be] text-lg lg:text-xl">
+            <p className="text-[#ADB7Be] text-lg mb-6 lg:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <div>
+            <a href="/Hrishi_SWE_Resume.pdf" download="Hrishi_Shah_Software_Engineering_Resume.pdf">
+                <button className='px-6 py-3 rounded-full bg-transparent mr-2 mb-3 hover:bg-slate-800 text-white border border-white'>
+                    Download CV
+                </button>
+            </a>     
+            <button className='px-6 py-4 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'>Contact Me</button>       
+            </div>
         </div>
-        <div className="col-span-5 place-self-center">
+        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
             <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
                 <Image 
                 src="/images/canva2.png"
