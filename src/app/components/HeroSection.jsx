@@ -17,22 +17,38 @@ export const HeroSection = () => {
             </span>
             Hrishi 
             <br></br>
-            <TypeAnimation
-            className='text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'
-            sequence={[
-                // Same substring at the start will only be typed out once, initially
-                'Software Developer',
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                'Web Developer',
-                1000,
-                'UI/UX Designer',
-                1000,
-                
-            ]}
-            wrapper="span"
-            speed={20}
-            repeat={Infinity}
-            />
+            <div className='relative inline-block'>
+                <TypeAnimation
+                className='text-transparent bg-clip-text bg-gradient-to-r from-white via-[#373B44] to-[#4286f4]'
+                sequence={[
+                    'Software Developer',
+                    1000,
+                    'Web Developer',
+                    1000,
+                    'UI/UX Designer',
+                    1000,
+                ]}
+                wrapper="span"
+                speed={20}
+                style={{ display: 'inline-block' }}
+                repeat={Infinity}
+                cursor={false} // Disable the default cursor
+                />
+                <span className="animate-blink">|</span>
+            </div>
+            <style jsx>{`
+                @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+                }
+                .animate-blink {
+                position: absolute;
+                right: -20px; /* Adjust this value to position the cursor correctly */
+                top: 0;
+                animation: blink 1s step-start infinite;
+                }
+            `}</style>
             </h1>
             <p className="text-[#ADB7Be] text-base sm:text-lg mb-6 lg:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
