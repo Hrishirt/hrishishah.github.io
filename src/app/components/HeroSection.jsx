@@ -1,14 +1,40 @@
+"use client";
 import React from 'react'
 import Image from 'next/image';
+
+import { TypeAnimation } from 'react-type-animation';
+
+
+
 export const HeroSection = () => {
   return (
   <section> 
-    <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center">
-            <h1 className = "text-white mb-4 text-4xl lg:text-6xl font-extrabold">
-                Hey, I'm Hrishi
+    <div className="grid grid-cols-1 sm:grid-cols-12">
+        <div className="col-span-7 place-self-center text-center sm:text-left">
+            <h1 className = "text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]">
+              Hello, I'm{" "}
+            </span>
+            Hrishi 
+            <br></br>
+            <TypeAnimation
+            className='text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'
+            sequence={[
+                // Same substring at the start will only be typed out once, initially
+                'Software Developer',
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                'Web Developer',
+                1000,
+                'UI/UX Designer',
+                1000,
+                
+            ]}
+            wrapper="span"
+            speed={20}
+            repeat={Infinity}
+            />
             </h1>
-            <p className="text-[#ADB7Be] text-lg mb-6 lg:text-xl">
+            <p className="text-[#ADB7Be] text-base sm:text-lg mb-6 lg:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
@@ -16,12 +42,14 @@ export const HeroSection = () => {
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <div>
+               
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-2 mb-3 bg-gradient-to-br from-[#373B44] via-blue-900 to-[#4286f4] hover:bg-gradient-to-br hover:from-[#4286f4] hover:via-blue-900 hover:to-[#373B44] ">Contact Me</button>
+
             <a href="/Hrishi_SWE_Resume.pdf" download="Hrishi_Shah_Software_Engineering_Resume.pdf">
-                <button className='px-6 py-3 rounded-full bg-transparent mr-2 mb-3 hover:bg-slate-800 text-white border border-white'>
-                    Download CV
+                <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#373B44] via-blue-900 to-[#4286f4]  '>
+                    <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
                 </button>
-            </a>     
-            <button className='px-6 py-4 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'>Contact Me</button>       
+            </a>    
             </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
