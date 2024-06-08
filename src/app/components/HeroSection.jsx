@@ -19,7 +19,7 @@ export const HeroSection = () => {
             <br></br>
             <div className='relative inline-block'>
                 <TypeAnimation
-                className='text-transparent bg-clip-text bg-gradient-to-r from-white via-[#373B44] to-[#4286f4]'
+                className='text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'
                 sequence={[
                     'Software Developer',
                     1000,
@@ -34,7 +34,7 @@ export const HeroSection = () => {
                 repeat={Infinity}
                 cursor={false} // Disable the default cursor
                 />
-                <span className="animate-blink">|</span>
+                <span className="animate-blink smaller-cursor">|</span>
             </div>
             <style jsx>{`
                 @keyframes blink {
@@ -47,6 +47,10 @@ export const HeroSection = () => {
                 right: -20px; /* Adjust this value to position the cursor correctly */
                 top: 0;
                 animation: blink 1s step-start infinite;
+                }   
+                .smaller-cursor {
+                    font-size: 0.85em; /* Adjust this value to make the cursor smaller */
+                    line-height: 1.25; /* Adjust this value to align with the text */
                 }
             `}</style>
             </h1>
@@ -61,9 +65,9 @@ export const HeroSection = () => {
                
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-2 mb-3 bg-gradient-to-br from-[#373B44] via-blue-900 to-[#4286f4] hover:bg-gradient-to-br hover:from-[#4286f4] hover:via-blue-900 hover:to-[#373B44] ">Contact Me</button>
 
-            <a href="/Hrishi_SWE_Resume.pdf" download="Hrishi_Shah_Software_Engineering_Resume.pdf">
+            <a target="_blank" href="/Hrishi_SWE_Resume.pdf" >
                 <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#373B44] via-blue-900 to-[#4286f4]'>
-                    <span className='block bg-[#121212] hover:bg-gradient-to-br hover:from-[#373B44] hover:via-blue-900 hover:to-[#4286f4] rounded-full px-5 py-2'>Download CV</span>
+                    <span className='block bg-[#121212] hover:bg-gradient-to-br hover:from-[#373B44] hover:via-blue-900 hover:to-[#4286f4] rounded-full px-5 py-2'>My Resume</span>
                 </button>
             </a>    
             </div>
