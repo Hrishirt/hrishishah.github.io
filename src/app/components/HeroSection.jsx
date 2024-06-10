@@ -9,6 +9,7 @@ import { TypeAnimation } from 'react-type-animation';
 export const HeroSection = () => {
   return (
   <section> 
+
     <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
             <h1 className = "text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
@@ -17,9 +18,9 @@ export const HeroSection = () => {
             </span>
             Hrishi 
             <br></br>
-            <div className='relative inline-block'>
+            <div className='relative inline-block mb-3'>
                 <TypeAnimation
-                className='text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'
+                className='text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4] '
                 sequence={[
                     'Software Developer',
                     1000,
@@ -30,29 +31,14 @@ export const HeroSection = () => {
                 ]}
                 wrapper="span"
                 speed={20}
-                style={{ display: 'inline-block' }}
+                style={{ display: 'inline-block', paddingBottom: '0.15em' }}
                 repeat={Infinity}
-                cursor={false} // Disable the default cursor
+                cursor={true} // Disable the default cursor
                 />
-                <span className="animate-blink smaller-cursor">|</span>
             </div>
-            <style jsx>{`
-                @keyframes blink {
-                50% {
-                    opacity: 0;
-                }
-                }
-                .animate-blink {
-                position: absolute;
-                right: -20px; /* Adjust this value to position the cursor correctly */
-                top: 0;
-                animation: blink 1s step-start infinite;
-                }   
-                .smaller-cursor {
-                    font-size: 0.85em; /* Adjust this value to make the cursor smaller */
-                    line-height: 1.25; /* Adjust this value to align with the text */
-                }
-            `}</style>
+            
+
+
             </h1>
             <p className="text-[#ADB7Be] text-base sm:text-lg mb-6 lg:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
@@ -84,6 +70,7 @@ export const HeroSection = () => {
             </div>
         </div>
     </div>
+
   </section>
   
     );
