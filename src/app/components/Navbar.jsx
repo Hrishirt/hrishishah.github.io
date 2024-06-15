@@ -56,7 +56,9 @@ const Navbar = () => {
                 </ul>
             </div>
         </div>
-        {navbarOpen ? <MenuOverlay links={NavLinks} /> : null}
+        <div className='delay-500'>
+            {navbarOpen ? <MenuOverlay links={NavLinks} /> : null}
+        </div>
     </nav>
   )
 }
