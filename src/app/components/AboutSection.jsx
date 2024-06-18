@@ -99,7 +99,7 @@ const AboutSection = () => {
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <div className='flex flex-row justify-start mt-8 '>
+                <div className='flex flex-row justify-start mt-8 overflow-x-auto'>
                     <TabButton selectTab={() => handleTabChange("Languages")} active ={tab === "Languages"}> Languages</TabButton> 
                     <TabButton selectTab={() => handleTabChange("Frameworks")} active ={tab === "Frameworks"}> Frameworks</TabButton>
                     <TabButton selectTab={() => handleTabChange("Education")} active ={tab === "Education"}> Education</TabButton>
