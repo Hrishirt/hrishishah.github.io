@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -50,7 +51,7 @@ const Navbar = () => {
                         NavLinks.map((link, index) => (
                             <li>
                                 <NavLink href={link.path} title = {link.title}/>
-                            </li>
+                            </li> 
                         ))
                     }
                 </ul>
