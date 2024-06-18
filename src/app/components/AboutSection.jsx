@@ -11,7 +11,7 @@ const TAB_DATA =
         id: "Languages",
         content: 
         (
-            <ul className='list-disc pl-2'>
+            <ul className='list-disc pl-2 text-[#ADB7Be]'>
                 <li>Python</li>
                 <li>Java</li>
                 <li>JavaScript</li>
@@ -21,14 +21,14 @@ const TAB_DATA =
                 <li>MySQL</li>
                 <li>HTML & CSS</li>
             </ul>
-        )
+        ),
     },
     {
         title: "Frameworks",
         id: "Frameworks",
         content: 
         (
-            <ul className='list-disc pl-2'>
+            <ul className='list-disc pl-2 text-[#ADB7Be]'>
                 <li>Django</li>
                 <li>Flask</li>
                 <li>Node.js</li>
@@ -40,30 +40,30 @@ const TAB_DATA =
                 <li>Pandas</li>
                 <li>Matplotlib</li>
             </ul>
-        )
+        ),
     },
     {
         title: "Education",
         id: "Education",
         content: 
         (
-            <ul className='list-disc pl-2'>
+            <ul className='list-disc pl-2 text-[#ADB7Be]'>
                 <li>University of Alberta Computing Science</li>
             </ul>
-        )
+        ),
     },
     {
         title: "Certifications",
         id: "Certifications",
         content: 
         (
-            <ul className='list-disc pl-2'>
+            <ul className='list-disc pl-2 text-[#ADB7Be]'>
                 <li>IBM Full Stack</li>
                 <li>University of Alberta Product Management</li>
                 <li>AWS Cloud</li>
                 <li>Azure</li>
             </ul>
-        )
+        ),
     }
 
 
@@ -99,13 +99,13 @@ const AboutSection = () => {
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <div className='flex flex-row justify-start mt-8'>
+                <div className='flex flex-row justify-start mt-8 '>
                     <TabButton selectTab={() => handleTabChange("Languages")} active ={tab === "Languages"}> Languages</TabButton> 
                     <TabButton selectTab={() => handleTabChange("Frameworks")} active ={tab === "Frameworks"}> Frameworks</TabButton>
                     <TabButton selectTab={() => handleTabChange("Education")} active ={tab === "Education"}> Education</TabButton>
                     <TabButton selectTab={() => handleTabChange("Certifications")} active ={tab === "Certifications"}> Certifications</TabButton>
                 </div>
-                <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
+                <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab)?.content}</div>
             </div>
         </div>
     </section>
