@@ -8,6 +8,7 @@ const Experience = () => {
       <div className="flex flex-wrap justify-center gap-4">
         <Card imageSource={'/images/compScience.jpg'}>
           <h3 className='text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>Dev ops Engineer Intern</h3> 
+          <h6 className='font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>May 2023 - September 2023</h6>
           <p>
             Developed and maintained the company using API's and DigitalOcean. 
             ran different tests to make sure different components of the server were working 
@@ -19,6 +20,7 @@ const Experience = () => {
 
         <Card imageSource={'/images/compScience.jpg'}>
           <h3 className='text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>Software Engineer Team Leader Intern</h3> 
+          <h6 className='font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>September 2023 - January 2024</h6>
           <p>
           Led a team of 5 interns to solve various problems and make a profit for the Company. Manually built 
           sensors to capture data. Used languages such as C, Python in order to develop a data collection system. 
@@ -27,6 +29,7 @@ const Experience = () => {
 
         <Card imageSource={'/images/compScience.jpg'}>
           <h3 className='text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>Computing Science Teaching Assistant</h3> 
+          <h6 className='font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>January 2024 - May 2024</h6>
           <p>
           Created assignments that matched course topics. 
           I held one-on-one help sessions to support their understanding and success. 
