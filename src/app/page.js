@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import Experience from "./components/Experience";
 import ProjectSection from "./components/ProjectSection";
+import ContactCard from "./components/ContactCard";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212] ">
@@ -13,6 +15,7 @@ export default function Home() {
       <AboutSection/>
       <Experience/>
       <ProjectSection/>
+      <ContactCard />
       </div>
     </main>
   );
