@@ -1,9 +1,10 @@
+import Image from 'next/image';
 import React from 'react';
 
 const CardComponent = () => {
   return (
     <>
-      <h2 className='text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4] mt-4 mb-8'>Contact Me</h2>
+      <h2 className='text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4] mt-4 mb-8' id='contact' >Contact Me</h2>
       <div className='flex justify-center items-center'>
         <div className="relative flex flex-col justify-center items-center text-gray-700 bg-[#141414] shadow-md bg-clip-border rounded-xl w-96">
           <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-[#141414] shadow-lg bg-clip-border rounded-xl h-80">
@@ -16,12 +17,20 @@ const CardComponent = () => {
             <p className="block mb-2 font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]">
               hrishishahh@gmail.com
             </p>
-            <div className="flex flex-col justify-center pb-6 pt-1 gap-2">
-            <a href="https://www.linkedin.com/in/hrishi-shah-17470a24a/" className="block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4] hover:text-blue-600">
-              LinkedIn
+            <div className="flex justify-center gap-4 py-4">
+            <a href="https://www.linkedin.com/in/hrishi-shah-17470a24a/" target='_none'>
+                <Image
+                    src="/images/linkedin.png"
+                    height={25}
+                    width={25}
+                />
             </a>
-            <a href="https://github.com/Hrishirt" className="block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4] hover:text-blue-600 ">
-              Github
+            <a href="https://github.com/Hrishirt" target='_none'>
+                <Image
+                    src="/images/github.png"
+                    height={25}
+                    width={25}
+                />
             </a>
           </div>
           </div>

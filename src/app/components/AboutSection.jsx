@@ -87,7 +87,7 @@ const AboutSection = () => {
   mr-3 font-semibold  hover:text-[#4286f4] w-30 h-10 flex justify-center items-center text-sky-200 border-2 rounded-lg border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] px-5
   */
   return (
-    <section className='text-white'>
+    <section className='text-white' id='about'>
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
             <Image src="/images/canva5.png" width={400} height={400}/>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>

@@ -50,9 +50,10 @@ export const HeroSection = () => {
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <div>
-               
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-2 mb-3 bg-gradient-to-br from-[#373B44] via-blue-900 to-[#4286f4] hover:bg-gradient-to-br hover:from-[#4286f4] hover:via-blue-900 hover:to-[#373B44] ">Contact Me</button>
-
+            
+            <a href='#contact'>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-2 mb-3 bg-gradient-to-br from-[#373B44] via-blue-900 to-[#4286f4] hover:bg-gradient-to-br hover:from-[#4286f4] hover:via-blue-900 hover:to-[#373B44]" href="/#contact">Contact Me</button>
+            </a>
             <a target="_blank" href="/Hrishi_SWE_Resume.pdf" >
                 <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#373B44] via-blue-900 to-[#4286f4]'>
                     <span className='block bg-[#121212] hover:bg-gradient-to-br hover:from-[#373B44] hover:via-blue-900 hover:to-[#4286f4] rounded-full px-5 py-2'>My Resume</span>

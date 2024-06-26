@@ -3,7 +3,7 @@ import Card from './Card';
 
 const Experience = () => {
   return (
-    <main className='App p-4'>
+    <main className='App p-4' id='experience'>
     <h2 className='text-4xl font-bold flex justify-center gap-4 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4] py-12'>Experience</h2>
       <div className="flex flex-wrap justify-center gap-4">
         <Card imageSource={'/images/compScience.jpg'}>

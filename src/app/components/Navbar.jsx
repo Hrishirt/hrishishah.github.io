@@ -21,7 +21,7 @@ const NavLinks =
     },
     {
         title: "Contact",
-        path: "#about"
+        path: "#contact"
     }
 
 ]
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8'>
                     {
                         NavLinks.map((link, index) => (
-                            <li>
+                            <li key={index}>
                                 <NavLink href={link.path} title = {link.title}/>
                             </li> 
                         ))
