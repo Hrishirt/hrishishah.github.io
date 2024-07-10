@@ -58,10 +58,12 @@ const TAB_DATA =
         content: 
         (
             <ul className='list-disc pl-2 text-[#ADB7Be]'>
-                <li>IBM Full Stack</li>
-                <li>University of Alberta Product Management</li>
-                <li>AWS Cloud</li>
-                <li>Azure</li>
+                <li>IBM Full Stack Software Developer Professional Certificate</li>
+                <li>IBM DevOps and Software Engineering Professional Certificate</li>
+                <li>University of Alberta Product Management Professional Certificate</li>
+                <li>IBM Network & Database Certificate</li>
+                <li>Meta Back-End Developer Professional Certificate</li>
+                <li>University of Minnesota Software Testing and Automation Specialization </li>
             </ul>
         ),
     }
