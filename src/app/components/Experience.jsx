@@ -10,7 +10,7 @@ const Experience = () => {
           <h3 className='text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>Dev ops Engineer Intern</h3> 
           <h6 className='font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>May 2023 - September 2023</h6>
           <p>
-            Developed and maintained the company using API's and DigitalOcean. 
+            Developed and maintained the company using API&apos;s and DigitalOcean. 
             ran different tests to make sure different components of the server were working 
             Enhanced architecture using containerization to improve application performance.
             
