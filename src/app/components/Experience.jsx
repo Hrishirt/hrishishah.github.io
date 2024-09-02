@@ -33,9 +33,19 @@ const Experience = () => {
           <p>
           Created assignments that matched course topics. 
           I held one-on-one help sessions to support their understanding and success. 
-          My efforts were well-received, earning a 5/5 rating from 85% of the class. 
+          My efforts were well-received, earning a 5/5 rating from 85% of the class.
           </p>   
         </Card>
+
+        <Card imageSource={'/images/compScience.jpg'}>
+          <h3 className='text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>Wireless Systems Engineering Intern</h3> 
+          <h6 className='font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4]'>September 2024 - Present</h6>
+          <p>
+          I am currently working on a project that involves working with a new wireless system for the company. 
+          I am using Python, SQL, and Docker to develop the system. 
+          
+          </p>   
+          </Card> 
       </div>
     </main>
   );

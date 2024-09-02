@@ -95,11 +95,11 @@ const AboutSection = () => {
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#373B44] to-[#4286f4] py-2'>About Me</h2>
                 <p className='text-base lg:text-lg text-[#ADB7Be]'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I am a Fourth year student at the University of Alberta studying Computing Science. 
+                I am a current Wireless Systems Engineering intern at Glencore. I have a passion for software development and machine learning with a emphasis on mathematics and statistics.
+                Currently I am honing my skills in software engineering and machine learning along with mathematics and statistics and attempting to apply them to real world problems.
+                You will find all of my certifcations, Education, and work experience below. 
+                
                 </p>
                 <div className='flex flex-row justify-start mt-8 overflow-x-auto'>
                     <TabButton selectTab={() => handleTabChange("Languages")} active ={tab === "Languages"}> Languages</TabButton> 
