@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 import { EyeIcon } from "@heroicons/react/24/solid";
-import Link from 'next/link'
+import Link from "next/link"
 
 const ProjectCard = ({ imgUrl, title, description, hostUrl, previewUrl}) => {
   return (
